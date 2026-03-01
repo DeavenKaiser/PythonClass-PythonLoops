@@ -1,7 +1,7 @@
 # --------------------------------------------
 # Name:
 # Date:
-# Program: Chapter 3 Practice
+# Program: Chapter 4 Practice
 # Description:
 # Complete each section by following the
 # directions in the comments.
@@ -9,73 +9,71 @@
 
 
 # ------------------------------------------------
-# Practice 1: Basic if Statement
+# Practice 1: Basic while Loop
 # ------------------------------------------------
 # TODO:
-# 1. Ask the user to enter their age
-# 2. Convert the input to an integer
-# 3. Use an if statement to check if they are 18 or older
-# 4. If true, print: "You are an adult."
+# 1. Create a variable named count and set it to 1
+# 2. Use a while loop to print numbers 1 through 5
+# 3. Increase count by 1 each iteration
+# 4. Make sure the loop stops properly
 
-print()  # blank line for readability
+print()  # blank line
 
 
 # ------------------------------------------------
-# Practice 2: if-else Statement
+# Practice 2: Basic for Loop
 # ------------------------------------------------
 # TODO:
-# 1. Ask the user to enter a number
-# 2. Convert the input to an integer
-# 3. If the number is positive, print "Positive number"
-# 4. Otherwise, print "Not a positive number"
+# 1. Use a for loop with range()
+# 2. Print numbers 1 through 5
+# 3. Then print numbers 5 down to 1
 
 print()
 
 
 # ------------------------------------------------
-# Practice 3: Comparing Strings
+# Practice 3: Running Total
 # ------------------------------------------------
 # TODO:
-# 1. Ask the user to enter a password
-# 2. If the password is exactly "Python123"
-#       print "Access Granted"
-# 3. Otherwise
-#       print "Access Denied"
-# 4. Remember: string comparisons are case sensitive
+# 1. Create a variable named total and set it to 0
+# 2. Use a for loop that runs 3 times
+# 3. Ask the user to enter a number each time
+# 4. Add each number to total
+# 5. Print the final total
 
 print()
 
 
 # ------------------------------------------------
-# Practice 4: if-elif-else Structure
+# Practice 4: Sentinel Loop
 # ------------------------------------------------
 # TODO:
-# 1. Ask the user to enter a test score
-# 2. Convert the input to an integer
-# 3. Use an if-elif-else structure to assign grades:
-#       90 and above = "A"
-#       80–89 = "B"
-#       70–79 = "C"
-#       60–69 = "D"
-#       Below 60 = "F"
-# 4. Print the letter grade
+# 1. Create a variable named total and set it to 0
+# 2. Ask the user to enter a number
+# 3. Continue asking for numbers until the user enters 0
+# 4. Add each number to total (except 0)
+# 5. When finished, print the total
 
 print()
 
 
 # ------------------------------------------------
-# Practice 5: Logical Operators and Boolean Variables
+# Practice 5: Debug the Loop
 # ------------------------------------------------
 # TODO:
-# 1. Ask the user for their annual income
-# 2. Ask how many years they have been employed
-# 3. Convert both inputs to integers
-# 4. Create a Boolean variable named qualifies
-# 5. Set qualifies to True if:
-#       income is at least 30000 AND
-#       years employed is at least 2
-# 6. Use an if statement to:
-#       If qualifies is True → print "Loan Approved"
-#       Otherwise → print "Loan Denied"
+# The program below is supposed to:
+# - Ask the user for 3 numbers
+# - Add them together
+# - Print the total
+#
+# There are 3 errors in this code.
+# Fix them so the program works correctly.
 
-print()
+
+total = 0
+
+for i in range(1, 3):
+    number = input("Enter a number: ")
+    total += number
+
+print("Total:", total)
